@@ -6,7 +6,7 @@
 
 ### My Quiz Results:
 <p>World Quiz</p>
-<a href="https://github.com/yenhtran/phase-0-unit-3/blob/master/week-7/imgs/sqlzoo_quiz1.jpg" target="_blank">
+<a href="/yenhtran/phase-0-unit-3/blob/master/week-7/imgs/sqlzoo_quiz1.jpg" target="_blank">
 <img src="images/sqlzoo_quiz1.jpg"></a>
 
 <p>Nobel Quiz</p>
