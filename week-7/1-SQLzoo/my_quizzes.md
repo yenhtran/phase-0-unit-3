@@ -6,7 +6,6 @@
 
 ### My Quiz Results:
 <p>World Quiz
-<a href="/week-7/imgs/sqlzoo_quiz1.jpg" target="_blank">
 	<img src="images/sqlzoo_quiz1.jpg"></a></p>
 
 <p>Nobel Quiz
