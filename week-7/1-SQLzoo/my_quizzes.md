@@ -6,22 +6,22 @@
 
 ### My Quiz Results:
 <p>World Quiz
-<a href="/yenhtran/phase-0-unit-3/blob/master/week-7/imgs/sqlzoo_quiz1.jpg" target="_blank">
+<a href="/week-7/imgs/sqlzoo_quiz1.jpg" target="_blank">
 	<img src="images/sqlzoo_quiz1.jpg"></a></p>
 
 <p>Nobel Quiz
-<a href="/yenhtran/phase-0-unit-3/blob/master/week-7/imgs/sqlzoo_quiz2.jpg" target="_blank">
+<a href="/week-7/imgs/sqlzoo_quiz2.jpg" target="_blank">
 	<img src="images/sqlzoo_quiz2.jpg"></a></p>
 
 <p>Sum and Count Quiz
-<a href="/yenhtran/phase-0-unit-3/blob/master/week-7/imgs/sqlzoo_quiz3.jpg" target="_blank">
+<a href="/week-7/imgs/sqlzoo_quiz3.jpg" target="_blank">
 	<img src="images/sqlzoo_quiz3.jpg"></a></p>
 
 <p>Join Quiz
-<a href="/yenhtran/phase-0-unit-3/blob/master/week-7/imgs/sqlzoo_quiz4.jpg" target="_blank">
+<a href="/week-7/imgs/sqlzoo_quiz4.jpg" target="_blank">
 	<img src="images/sqlzoo_quiz4.jpg"></a></p>
 
-
+https://github.com/yenhtran/phase-0-unit-3/blob/master/yenhtran/phase-0-unit-3/blob/master/week-7/imgs/sqlzoo_quiz1.jpg
 
 
 ### Reflection
