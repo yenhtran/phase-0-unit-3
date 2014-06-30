@@ -21,7 +21,6 @@
 <a href="/week-7/imgs/sqlzoo_quiz4.jpg" target="_blank">
 	<img src="images/sqlzoo_quiz4.jpg"></a></p>
 
-https://github.com/yenhtran/phase-0-unit-3/blob/master/yenhtran/phase-0-unit-3/blob/master/week-7/imgs/sqlzoo_quiz1.jpg
 
 
 ### Reflection
