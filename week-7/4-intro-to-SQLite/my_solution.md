@@ -69,4 +69,4 @@ id          first_name  last_name   email                  created_at           
 </pre></code>
 
 ## Release 5: Reflect
-<!-- Add your reflection here -->
+This was the quickest challenge to date! The directions were pretty straightforward with minimal web searches. I enjoyed reinforcing the SQLite commands. I learned UPDATE on a single SQL line and thought that was pretty handy. Overall, I enjoyed this challenge. Wished the table looked better here.
