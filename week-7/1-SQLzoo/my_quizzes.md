@@ -5,8 +5,8 @@
 
 
 ### My Quiz Results:
-<p>World Quiz
-![World Quiz](/week-7/imgs/sqlzoo_quiz1.png)
+World Quiz
+![World Quiz](/week-7/imgs/sqlzoo_quiz1.png "World Quiz")
 
 
 <p>Nobel Quiz
