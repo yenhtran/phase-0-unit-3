@@ -6,20 +6,20 @@
 
 ### My Quiz Results:
 <p>World Quiz
-	<a href="/week-7/imgs/sqlzoo_quiz1.jpg" target="_blank">
-	<img src="images/sqlzoo_quiz1.jpg"></a></p>
+	<a href="/week-7/imgs/sqlzoo_quiz1.png" target="_blank">
+	<img src="images/sqlzoo_quiz1.png"></a></p>
 
 <p>Nobel Quiz
-<a href="/week-7/imgs/sqlzoo_quiz2.jpg" target="_blank">
-	<img src="images/sqlzoo_quiz2.jpg"></a></p>
+<a href="/week-7/imgs/sqlzoo_quiz2.png" target="_blank">
+	<img src="images/sqlzoo_quiz2.png"></a></p>
 
 <p>Sum and Count Quiz
-<a href="/week-7/imgs/sqlzoo_quiz3.jpg" target="_blank">
-	<img src="images/sqlzoo_quiz3.jpg"></a></p>
+<a href="/week-7/imgs/sqlzoo_quiz3.png" target="_blank">
+	<img src="images/sqlzoo_quiz3.png"></a></p>
 
 <p>Join Quiz
-<a href="/week-7/imgs/sqlzoo_quiz4.jpg" target="_blank">
-	<img src="images/sqlzoo_quiz4.jpg"></a></p>
+<a href="/week-7/imgs/sqlzoo_quiz4.png" target="_blank">
+	<img src="images/sqlzoo_quiz4.png"></a></p>
 
 
 
