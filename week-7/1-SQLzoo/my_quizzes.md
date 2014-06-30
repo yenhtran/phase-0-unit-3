@@ -8,19 +8,14 @@
 World Quiz
 ![World Quiz](/week-7/imgs/sqlzoo_quiz1.png "World Quiz")
 
+Nobel Quiz
+![Nobel Quiz](/week-7/imgs/sqlzoo_quiz2.png "Nobel Quiz")
 
-<p>Nobel Quiz
-<a href="/week-7/imgs/sqlzoo_quiz2.png" target="_blank">
-	<img src="images/sqlzoo_quiz2.png"></a></p>
+Sum and Count Quiz
+![Sum and Count Quiz](/week-7/imgs/sqlzoo_quiz3.png "Sum and Count Quiz")
 
-<p>Sum and Count Quiz
-<a href="/week-7/imgs/sqlzoo_quiz3.png" target="_blank">
-	<img src="images/sqlzoo_quiz3.png"></a></p>
-
-<p>Join Quiz
-<a href="/week-7/imgs/sqlzoo_quiz4.png" target="_blank">
-	<img src="images/sqlzoo_quiz4.png"></a></p>
-
+Join Quiz
+![Join Quiz](/week-7/imgs/sqlzoo_quiz4.png "Join Quiz")
 
 
 ### Reflection
