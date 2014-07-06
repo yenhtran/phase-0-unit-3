@@ -7,7 +7,7 @@ variables match (i.e., 'Joseph' is the first element in students; his scores are
 
 Do not alter the students and scores code.
 
-I worked on this challenge [by myself, with:]
+I worked on this challenge with Alex Birdsall
 
 */
 
@@ -23,20 +23,48 @@ var scores = [ [80, 70, 70, 100],
 
 
 
-// __________________________________________
 // Write your code below.
+// function average(array) {
+//   var sum = 0;
+//   for (i = 0; i < array.length; i++) {
+//     sum += array[i];
+//   }
+//   return sum/array.length;
+// }
 
+// var gradebook= {
+//   Joseph: {testScores: scores[0]}, 
+//   Susan: {testScores: scores[1]},
+//   William: {testScores: scores[2]},
+//   Elizabeth: {testScores: scores[3]},
 
+//   addScore: function(name, score){
+//     gradebook[name].testScores.push(score);
+//   },
 
+//   getAverage: function(name){
+//     return average(gradebook[name].testScores);
+//   }
+// };
 
 
 
 // __________________________________________
 // Refactored Solution
+var gradebook= {
+  Joseph: {testScores: scores[0]}, 
+  Susan: {testScores: scores[1]},
+  William: {testScores: scores[2]},
+  Elizabeth: {testScores: scores[3]},
 
+  addScore: function(name, score){
+    gradebook[name].testScores.push(score);
+  },
 
-
-
+  getAverage: function(name){
+    return average(gradebook[name].testScores);
+  }
+};
 
 
 
