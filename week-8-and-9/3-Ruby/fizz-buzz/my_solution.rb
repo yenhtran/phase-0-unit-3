@@ -63,3 +63,7 @@ puts super_fizzbuzz([30, 9, 20, 1]) == ["FizzBuzz", "Fizz", "Buzz", 1]
 
 
 # 5. Reflection 
+=begin
+I feel like I do understand this challenge a little better. I felt like my pair really understand it and was able to write really simple code. I am in awe of him at the moment...
+=end
+
