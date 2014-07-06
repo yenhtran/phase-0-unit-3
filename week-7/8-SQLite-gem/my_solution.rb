@@ -37,10 +37,10 @@ end
 def print_selected_states(*states)
   puts "REPRESENTATIVES FOR SELECTED STATES"
   states.each {|state|
-    selected_reps = $db.execute("SELECT name, location FROM congress_members WHERE location = #{state}")
+    selected_reps = $db.execute("SELECT name, location FROM congress_members WHERE location= '#{state}'")
     selected_reps.each {|name,location| puts "#{location}-#{name}"}
   }
-  puts states
+  puts ""
 end
 
 def print_separator
@@ -63,12 +63,12 @@ print_lowest_grade_level_speakers
 print_separator
 
 print_selected_states("NJ", "NY", "ME", "FL", "AK")
-# TODO - Make a method to print the following states representatives as well:
-# (New Jersey, New York, Maine, Florida, and Alaska)
+
 
 
 ##### BONUS #######
 # TODO (bonus) - Stop SQL injection attacks!  Statmaster learned that interpolation of variables in SQL statements leaves some security vulnerabilities.  Use the google to figure out how to protect from this type of attack.
+
 
 # TODO (bonus)
 # Create a listing of all of the Politicians and the number of votes they recieved
