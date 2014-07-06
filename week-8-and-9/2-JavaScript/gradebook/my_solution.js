@@ -19,10 +19,6 @@ var scores = [ [80, 70, 70, 100],
                [100, 90, 95, 85] ]
 
 
-
-
-
-
 // Write your code below.
 // function average(array) {
 //   var sum = 0;
@@ -71,6 +67,7 @@ var gradebook= {
 
 // __________________________________________
 // Reflect
+// Holy cow- I feel like I forgot everything I learned about Javascript! I actually had to take time out and review some of the assignments before pair programming on this assignment. This still feels very shakey about Javascript...
 
 
 
