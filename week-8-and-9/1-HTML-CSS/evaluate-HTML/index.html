@@ -1,948 +1,903 @@
-
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="news.css?zMV4H8oJn3KKjpenXRmm">
-	<link rel="shortcut icon" href="favicon.ico">
-	<script type="text/javascript">
-	function byId(id) {
-	  return document.getElementById(id);
-	}
-
-	function vote(node) {
-	  var v = node.id.split(/_/);   // {'up', '123'}
-	  var item = v[1];
-
-	  // hide arrows
-	  byId('up_'   + item).style.visibility = 'hidden';
-	  byId('down_' + item).style.visibility = 'hidden';
-
-	  // ping server
-	  var ping = new Image();
-	  ping.src = node.href;
-
-  	return false; // cancel browser nav
-	} 
-	</script>
-	<title>Hacker News</title>
+  <link rel="stylesheet" type="text/css" href="news.css?zMV4H8oJn3KKjpenXRmm">
+  <link rel="shortcut icon" href="favicon.ico">
+  <script type="text/javascript">
+function byId(id) {
+return document.getElementById(id);
+}
+function vote(node) {
+var v = node.id.split(/_/);   // {'up', '123'}
+var item = v[1];
+// hide arrows
+byId('up_'   + item).style.visibility = 'hidden';
+byId('down_' + item).style.visibility = 'hidden';
+// ping server
+var ping = new Image();
+ping.src = node.href;
+return false; // cancel browser nav
+} </script>
+  <title>Hacker News</title>
 </head>
-
 <body>
-	<center>
-		<table border=0 cellpadding=0 cellspacing=0 width="85%" bgcolor=#f6f6ef>
-			<tr>
-				<td bgcolor=#ff6600>
-					<table border=0 cellpadding=0 cellspacing=0 width="100%" style="padding:2px">
-						<tr>
-							<td style="width:18px;padding-right:4px">
-								<a href="http://www.ycombinator.com">
-									<img src="y18.gif" width=18 height=18 style="border:1px #ffffff solid;"></img>
-								</a>
-							</td>
-							<td style="line-height:12pt; height:10px;">
-								<span class="pagetop">
-									<b>
-										<a href="news">Hacker News</a>
-									</b>
-									<img src="s.gif" height=1 width=10>
-									<a href="newest">new</a> | 
-									<a href="newcomments">comments</a> | 
-									<a href="show">show</a> | 
-									<a href="ask">ask</a> | 
-									<a href="jobs">jobs</a> | 
-									<a href="submit">submit</a>
-								</span>
-							</td>
-							<td style="text-align:right;padding-right:4px;">
-								<span class="pagetop">
-									<a href="newslogin?whence=%6e%65%77%73">login</a>
-								</span>
-							</td>
-						</tr>
-					</table>
-				</td>
-			</tr>
-			<tr style="height:10px">
-			</tr>
-			<tr>
-				<td>
-					<table border=0 cellpadding=0 cellspacing=0>
-						<tr>
-							<td align=right valign=top class="title">1.
-							</td>
-							<td>
-								<center>
-									<a id=up_8001337 href="vote?for=8001337&amp;dir=up&amp;whence=%6e%65%77%73">
-										<div class="votearrow" title="upvote">
-										</div>
-									</a>
-									<span> id=down_8001337>
-									</span>
-								</center>
-							</td>
-							<td class="title">
-								<a href="http://cacm.acm.org/blogs/blog-cacm/176450-python-is-now-the-most-popular-introductory-teaching-language-at-top-us-universities/fulltext">Python is now the most popular introductory language at top U.S. universities</a>
-								<span class="comhead"> (acm.org) </span>
-							</td>
-						</tr>
-						<tr>
-							<td colspan=2></td>
-							<td class="subtext">
-								<span id=score_8001337>141 points</span> by <a href="user?id=pbui">pbui</a> 2 hours ago  | 
-								<a href="item?id=8001337">112 comments</a>
-							</td>
-						</tr>
-						<tr style="height:5px">
-						</tr>
-						<tr>
-							<td align=right valign=top class="title">2.
-							</td>
-							<td>
-								<center>
-									<a id=up_8001464 href="vote?for=8001464&amp;dir=up&amp;whence=%6e%65%77%73">
-										<div class="votearrow" title="upvote">
-										</div>
-									</a>
-									<span> id=down_8001464></span>
-								</center>
-							</td>
-							<td class="title">
-								<a href="https://medium.com/@shazow/urllib3-stripe-and-open-source-grants-edb9c0e46e82">Urllib3, Stripe, and Open Source Grants</a>
-								<span class="comhead"> (medium.com) </span>
-							</td>
-						</tr>
-						<tr>
-							<td colspan=2>
-							</td>
-							<td class="subtext">
-								<span id=score_8001464>54 points</span> by <a href="user?id=malditojavi">malditojavi</a> 2 hours ago  | <a href="item?id=8001464">6 comments</a>
-							</td>
-						</tr>
-						<tr style="height:5px">
-						</tr>
-						<tr>
-							<td align=right valign=top class="title">3.
-							</td>
-							<td>
-								<center>
-									<a id=up_8000966 href="vote?for=8000966&amp;dir=up&amp;whence=%6e%65%77%73">
-										<div class="votearrow" title="upvote">
-										</div>
-									</a>
-									<span> id=down_8000966>
-									</span>
-								</center>
-							</td>
-							<td class="title">
-								<a href="https://bitcoinfoundation.org/2014/07/07/floating-fees">Bitcoin Core switching from hard-coded to flexible fees in next major release</a>
-								<span class="comhead"> (bitcoinfoundation.org) 
-								</span>
-							</td>
-						</tr>
-						<tr>
-							<td colspan=2>
-							</td>
-							<td class="subtext">
-								<span> id=score_8000966>92 points
-								</span> by 
-								<a href="user?id=FatalLogic">FatalLogic</a> 3 hours ago  | 
-								<a href="item?id=8000966">24 comments</a>
-							</td>
-						</tr>
-						<tr style="height:5px">
-						</tr>
-						<tr>
-							<td align=right valign=top class="title">4.
-							</td>
-							<td>
-								<center>
-									<a id=up_8000545 href="vote?for=8000545&amp;dir=up&amp;whence=%6e%65%77%73">
-										<div class="votearrow" title="upvote">
-										</div>
-									</a>
-									<span> id=down_8000545>
-									</span>
-								</center>
-							</td>
-							<td class="title">
-								<a href="http://lists.centos.org/pipermail/centos-announce/2014-July/020393.html">CentOS 7 released on x86_64</a>
-								<span class="comhead"> (centos.org) 
-								</span>
-							</td>
-						</tr>
-						<tr>
-							<td colspan=2>
-							</td>
-							<td class="subtext">
-								<span> id=score_8000545>111 points
-								</span> by <a href="user?id=priteau">priteau</a> 4 hours ago  | 
-								<a href="item?id=8000545">60 comments</a>
-							</td>
-						</tr>
-						<tr style="height:5px">
-						</tr>
-						<tr>
-							<td align=right valign=top class="title">5.
-							</td>
-							<td>
-								<center>
-									<a id=up_8001689 href="vote?for=8001689&amp;dir=up&amp;whence=%6e%65%77%73">
-										<div class="votearrow" title="upvote">
-										</div>
-									</a>
-									<span> id=down_8001689>
-									</span>
-								</center>
-							</td>
-							<td class="title">
-								<a href="http://online.wsj.com/articles/in-japan-idled-electronics-factories-find-new-life-in-farming-1404700202">In Japan, Idled Electronics Factories Find New Life in Farming</a>
-								<span class="comhead"> (wsj.com) 
-								</span>
-							</td>
-						</tr>
-						<tr>
-							<td colspan=2>
-							</td>
-							<td class="subtext">
-								<span id=score_8001689>19 points</span> by <a href="user?id=T-A">T-A</a> 1 hour ago  | 
-								<a href="item?id=8001689">2 comments</a>
-							</td>
-						</tr>
-						<tr style="height:5px">
-						</tr>
-						<tr>
-							<td align=right valign=top class="title">6.
-							</td>
-							<td>
-								<center>
-									<a id=up_7999814 href="vote?for=7999814&amp;dir=up&amp;whence=%6e%65%77%73">
-										<div class="votearrow" title="upvote">
-										</div>
-									</a>
-									<span> id=down_7999814>
-									</span>
-								</center>
-							</td>
-							<td class="title">
-								<a href="http://techcrunch.com/2014/07/07/mit-and-dropbox-alums-launch-inbox-a-next-generation-email-platform/?utm_campaign=fb&amp;ncid=fb">MIT And Dropbox Alums Launch Inbox, a Next-Generation Email Platform</a>
-								<span class="comhead"> (techcrunch.com) 
-								</span>
-							</td>
-						</tr>
-						<tr>
-							<td colspan=2>
-							</td>
-							<td class="subtext">
-								<span> id=score_7999814>203 points
-								</span> by <a href="user?id=ThomPete">ThomPete</a> 6 hours ago  | 
-								<a href="item?id=7999814">180 comments</a>
-							</td>
-						</tr>
-						<tr style="height:5px">
-						</tr>
-						<tr>
-							<td align=right valign=top class="title">7.
-							</td>
-							<td>
-								<center><a id=up_8000528 href="vote?for=8000528&amp;dir=up&amp;whence=%6e%65%77%73">
-									<div class="votearrow" title="upvote">
-									</div></a>
-									<span> id=down_8000528>
-									</span>
-								</center>
-							</td>
-							<td class="title"><a href="https://sheetlabs.com">Show HN: Sheetlabs – Turn your spreadsheets into APIs</a>
-								<span class="comhead"> (sheetlabs.com) 
-								</span>
-							</td>
-						</tr>
-						<tr>
-							<td colspan=2>
-							</td>
-							<td class="subtext">
-								<span id=score_8000528>71 points</span> by <a href="user?id=samcrawford">samcrawford</a> 4 hours ago  | <a href="item?id=8000528">43 comments</a>
-							</td>
-						</tr>
-						<tr style="height:5px">
-						</tr>
-						<tr>
-							<td align=right valign=top class="title">8.
-							</td>
-							<td>
-								<center><a id=up_8001224 href="vote?for=8001224&amp;dir=up&amp;whence=%6e%65%77%73">
-									<div class="votearrow" title="upvote">
-									</div></a>
-									<span> id=down_8001224>
-									</span>
-								</center>
-							</td>
-							<td class="title"><a href="http://techcrunch.com/2014/07/04/the-government-once-built-silicon-valley/?utm_campaign=fb&amp;ncid=fb">The Government Once Built Silicon Valley</a>
-								<span class="comhead"> (techcrunch.com) 
-								</span>
-							</td>
-						</tr>
-						<tr>
-							<td colspan=2>
-							</td>
-							<td class="subtext">
-								<span id=score_8001224>26 points</span> by <a href="user?id=sgy">sgy</a> 2 hours ago  | 
-								<a href="item?id=8001224">17 comments</a>
-							</td>
-						</tr>
-						<tr style="height:5px">
-						</tr>
-						<tr>
-							<td align=right valign=top class="title">9.
-							</td>
-							<td>
-								<center><a id=up_8001245 href="vote?for=8001245&amp;dir=up&amp;whence=%6e%65%77%73">
-									<div class="votearrow" title="upvote">
-									</div></a>
-									<span> id=down_8001245>
-									</span>
-								</center>
-							</td>
-							<td class="title"><a href="https://github.com/practicalswift/Pythonic.swift">Show HN: A Swift implementation of selected parts of Python standard library</a>
-								<span> class="comhead"> (github.com) 
-								</span>
-							</td>
-						</tr>
-						<tr>
-							<td colspan=2>
-							</td>
-							<td class="subtext">
-								<span id=score_8001245>24 points</span> by <a href="user?id=practicalswift">practicalswift</a> 2 hours ago  | 
-								<a href="item?id=8001245">6 comments</a>
-							</td>
-						</tr>
-						<tr style="height:5px">
-						</tr>
-						<tr>
-							<td align=right valign=top class="title">10.
-							</td>
-							<td>
-								<center><a id=up_7999392 href="vote?for=7999392&amp;dir=up&amp;whence=%6e%65%77%73">
-									<div class="votearrow" title="upvote">
-									</div></a>
-									<span> id=down_7999392>
-									</span>
-								</center>
-							</td>
-							<td class="title">
-								<a href="http://nothings.org/gamedev/herringbone/">Herringbone Wang Tiles</a>
-								<span class="comhead"> (nothings.org) 
-								</span>
-							</td>
-						</tr>
-						<tr>
-							<td colspan=2>
-							</td>
-							<td class="subtext">
-								<span id=score_7999392>109 points</span> by <a href="user?id=speednoise">speednoise</a> 7 hours ago  | <a href="item?id=7999392">7 comments</a>
-							</td>
-						</tr>
-						<tr style="height:5px">
-						</tr>
-						<tr>
-							<td align=right valign=top class="title">11.
-							</td>
-							<td>
-								<center><a id=up_7999269 href="vote?for=7999269&amp;dir=up&amp;whence=%6e%65%77%73">
-									<div class="votearrow" title="upvote">
-									</div></a>
-									<span> id=down_7999269>
-									</span>
-								</center>
-							</td>
-							<td class="title"><a href="http://lmjabreu.com/post/ios-8-privacy-updates/">iOS 8 Privacy Updates</a>
-								<span class="comhead"> (lmjabreu.com) 
-								</span>
-							</td>
-						</tr>
-						<tr>
-							<td colspan=2>
-							</td>
-							<td class="subtext">
-								<span id=score_7999269>123 points</span> by <a href="user?id=kyledreger">kyledreger</a> 7 hours ago  | <a href="item?id=7999269">32 comments</a>
-							</td>
-						</tr>
-						<tr style="height:5px">
-						</tr>
-						<tr>
-							<td align=right valign=top class="title">12.
-							</td>
-							<td>
-								<center>
-									<a id=up_8001221 href="vote?for=8001221&amp;dir=up&amp;whence=%6e%65%77%73">
-										<div class="votearrow" title="upvote">
-										</div>
-									</a>
-									<span> id=down_8001221>
-									</span>
-								</center>
-							</td>
-							<td class="title">
-								<a href="https://dot.kde.org/2014/07/07/kde-frameworks-5-makes-kde-software-more-accessible-all-qt-developers">First stable release of Frameworks 5
-								</a>
-								<span class="comhead"> (kde.org) 
-								</span>
-							</td>
-						</tr>
-						<tr>
-							<td colspan=2>
-							</td>
-							<td class="subtext">
-								<span id=score_8001221>20 points</span> by <a href="user?id=Tsiolkovsky">Tsiolkovsky</a> 2 hours ago  | <a href="item?id=8001221">6 comments</a>
-							</td>
-						</tr>
-						<tr style="height:5px">
-						</tr>
-						<tr>
-							<td align=right valign=top class="title">13.
-							</td>
-							<td>
-								<center>
-									<a id=up_8001400 href="vote?for=8001400&amp;dir=up&amp;whence=%6e%65%77%73">
-										<div class="votearrow" title="upvote">
-										</div>
-									</a>
-									<span >id=down_8001400>
-									</span>
-								</center>
-							</td>
-							<td class="title">
-								<a href="http://www.guernicamag.com/daily/anya-groner-the-heart-you-save-wont-be-your-own/">Anya Groner: The Heart You Save Won’t Be Your Own
-								</a>
-								<span class="comhead"> (guernicamag.com) 
-								</span>
-							</td>
-						</tr>
-						<tr>
-							<td colspan=2>
-							</td>
-							<td class="subtext">
-								<span> id=score_8001400>15 points
-								</span> by <a href="user?id=Mz">Mz</a> 2 hours ago  | 
-								<a href="item?id=8001400">5 comments</a>
-							</td>
-						</tr>
-						<tr style="height:5px">
-						</tr>
-						<tr>
-							<td align=right valign=top class="title">14.
-							</td>
-							<td>
-								<center>
-									<a id=up_8000811 href="vote?for=8000811&amp;dir=up&amp;whence=%6e%65%77%73">
-										<div class="votearrow" title="upvote">
-										</div>
-									</a>
-									<span> id=down_8000811>
-									</span>
-								</center>
-							</td>
-							<td class="title">
-								<a href="item?id=8000811">Ask HN: How best to learn software design principles?
-								</a>
-							</td>
-						</tr>
-						<tr>
-							<td colspan=2>
-							</td>
-							<td class="subtext">
-								<span> id=score_8000811>82 points
-								</span> by 
-								<a href="user?id=chaimkut">chaimkut</a> 3 hours ago  | 
-								<a href="item?id=8000811">48 comments</a>
-							</td>
-						</tr>
-						<tr style="height:5px">
-						</tr>
-						<tr>
-							<td align=right valign=top class="title">15.
-							</td>
-							<td>
-								<center>
-									<a id=up_7998392 href="vote?for=7998392&amp;dir=up&amp;whence=%6e%65%77%73">
-										<div class="votearrow" title="upvote">
-										</div>
-									</a>
-									<span> id=down_7998392>
-									</span>
-								</center>
-							</td>
-							<td class="title">
-								<a href="http://superpixelquest.com/">Super Pixel Quest</a>
-								<span class="comhead"> (superpixelquest.com) 
-								</span>
-							</td>
-						</tr>
-						<tr>
-							<td colspan=2>
-							</td>
-							<td class="subtext">
-								<span> id=score_7998392>154 points
-								</span> by <a href="user?id=EmilandDC">EmilandDC</a> 10 hours ago  | 
-								<a href="item?id=7998392">33 comments</a>
-							</td>
-						</tr>
-						<tr style="height:5px">
-						</tr>
-						<tr>
-							<td align=right valign=top class="title">16.
-							</td>
-							<td>
-								<center>
-									<a id=up_8001116 href="vote?for=8001116&amp;dir=up&amp;whence=%6e%65%77%73">
-										<div class="votearrow" title="upvote">
-										</div>
-									</a>
-									<span> id=down_8001116>
-									</span>
-								</center>
-							</td>
-							<td class="title">
-								<a href="http://vellum.nytlabs.com/">Vellum
-								</a>
-								<span class="comhead"> (nytlabs.com) 
-								</span>
-							</td>
-						</tr>
-						<tr>
-							<td colspan=2>
-							</td>
-							<td class="subtext">
-								<span id=score_8001116>24 points</span> by <a href="user?id=philip1209">philip1209</a> 2 hours ago  | <a href="item?id=8001116">10 comments</a>
-							</td>
-						</tr>
-						<tr style="height:5px">
-						</tr>
-						<tr>
-							<td align=right valign=top class="title">17.
-							</td>
-							<td>
-								<center>
-									<a id=up_8000166 href="vote?for=8000166&amp;dir=up&amp;whence=%6e%65%77%73">
-										<div class="votearrow" title="upvote">
-										</div>
-									</a>
-									<span> id=down_8000166>
-									</span>
-								</center>
-							</td>
-							<td class="title">
-								<a href="http://www.nytimes.com/2014/07/06/business/wall-street-banks-and-private-equity-firms-compete-for-young-talent.html">Wall Street Banks and Private Equity Firms Compete for Young Talent</a>
-								<span class="comhead"> (nytimes.com) 
-								</span>
-							</td>
-						</tr>
-						<tr>
-							<td colspan=2>
-							</td>
-							<td class="subtext">
-								<span> id=score_8000166>42 points
-								</span> by <a href="user?id=a5seo">a5seo</a> 5 hours ago  | 
-								<a href="item?id=8000166">28 comments</a>
-							</td>
-						</tr>
-						<tr style="height:5px">
-						</tr>
-						<tr>
-							<td align=right valign=top class="title">18.
-							</td>
-							<td>
-								<center>
-									<a id=up_7998609 href="vote?for=7998609&amp;dir=up&amp;whence=%6e%65%77%73">
-										<div class="votearrow" title="upvote">
-										</div>
-									</a>
-									<span> id=down_7998609>
-									</span>
-								</center>
-							</td>
-							<td class="title">
-								<a href="http://www.fireflyspace.com">Firefly Space Systems</a>
-								<span class="comhead"> (fireflyspace.com) </span>
-							</td>
-						</tr>
-						<tr>
-							<td colspan=2>
-							</td>
-							<td class="subtext">
-								<span> id=score_7998609>124 points
-								</span> by <a href="user?id=cryptoz">cryptoz</a> 10 hours ago  | 
-								<a href="item?id=7998609">99 comments</a>
-							</td>
-						</tr>
-						<tr style="height:5px">
-						</tr>
-						<tr>
-							<td align=right valign=top class="title">19.
-							</td>
-							<td>
-								<center>
-									<a id=up_7998048 href="vote?for=7998048&amp;dir=up&amp;whence=%6e%65%77%73">
-										<div class="votearrow" title="upvote">
-										</div>
-									</a>
-									<span> id=down_7998048>
-									</span>
-								</center>
-							</td>
-							<td class="title"><a href="https://ssl.washingtonpost.com/securedrop">SecureDrop</a>
-								<span class="comhead"> (washingtonpost.com) </span>
-							</td>
-						</tr>
-						<tr>
-							<td colspan=2>
-							</td>
-							<td class="subtext">
-								<span> id=score_7998048>205 points</span> by 
-								<a href="user?id=brianmwaters_hn">brianmwaters_hn</a> 12 hours ago  | 
-								<a href="item?id=7998048">75 comments</a>
-							</td>
-						</tr>
-						<tr style="height:5px">
-						</tr>
-						<tr>
-							<td align=right valign=top class="title">20.
-							</td>
-							<td>
-								<center>
-									<a id=up_8000475 href="vote?for=8000475&amp;dir=up&amp;whence=%6e%65%77%73">
-										<div class="votearrow" title="upvote">
-										</div>
-									</a>
-									<span> id=down_8000475></span>
-								</center>
-							</td>
-							<td class="title">
-								<a href="http://www.nytimes.com/2014/07/08/upshot/welcome-to-the-everything-boom-or-maybe-the-everything-bubble.html?src=twr">Welcome to the Everything Boom, or Maybe the Everything Bubble</a>
-								<span class="comhead"> (nytimes.com) </span>
-							</td>
-						</tr>
-						<tr>
-							<td colspan=2>
-							</td>
-							<td class="subtext">
-								<span> id=score_8000475>29 points
-								</span> by <a href="user?id=happyscrappy">happyscrappy</a> 4 hours ago  | 
-								<a href="item?id=8000475">17 comments</a>
-							</td>
-						</tr>
-						<tr style="height:5px">
-						</tr>
-						<tr>
-							<td align=right valign=top class="title">21.
-							</td>
-							<td>
-							</td>
-							<td class="title">
-								<a href="http://www.doordash.com/jobs" rel="nofollow">DoorDash (YC S13) is hiring. Come build the future of local, on-demand logistics</a>
-								<span class="comhead"> (doordash.com) 
-								</span>
-							</td>
-						</tr>
-						<tr>
-							<td colspan=2></td>
-							<td class="subtext">1 hour ago</td>
-						</tr>
-						<tr style="height:5px">
-						</tr>
-						<tr>
-							<td align=right valign=top class="title">22.
-							</td>
-							<td>
-								<center>
-									<a id=up_7998657 href="vote?for=7998657&amp;dir=up&amp;whence=%6e%65%77%73">
-										<div class="votearrow" title="upvote">
-										</div>
-									</a>
-									<span> id=down_7998657>
-									</span>
-								</center>
-							</td>
-							<td class="title">
-								<a href="http://robertheaton.com/2014/06/20/code-review-without-your-eyes/">Code review without your glasses</a>
-								<span class="comhead"> (robertheaton.com) </span>
-							</td>
-						</tr>
-						<tr>
-							<td colspan=2>
-							</td>
-							<td class="subtext">
-								<span> id=score_7998657>93 points
-								</span> by <a href="user?id=padolsey">padolsey</a> 9 hours ago  | 
-								<a href="item?id=7998657">24 comments</a>
-							</td>
-						</tr>
-						<tr style="height:5px">
-						</tr>
-						<tr>
-							<td align=right valign=top class="title">23.
-							</td>
-							<td>
-								<center>
-									<a id=up_8000346 href="vote?for=8000346&amp;dir=up&amp;whence=%6e%65%77%73">
-										<div class="votearrow" title="upvote">
-										</div>
-									</a>
-									<span> id=down_8000346></span>
-								</center>
-							</td>
-							<td class="title">
-								<a href="http://alarmingdevelopment.org/?p=865">Developer inequality and the technical debt crisis</a><span class="comhead"> (alarmingdevelopment.org) </span>
-							</td>
-						</tr>
-						<tr>
-							<td colspan=2>
-							</td>
-							<td class="subtext">
-								<span> id=score_8000346>69 points</span> by 
-								<a href="user?id=swannodette">swannodette</a> 5 hours ago  | 
-								<a href="item?id=8000346">68 comments</a>
-							</td>
-						</tr>
-						<tr style="height:5px">
-						</tr>
-						<tr>
-							<td align=right valign=top class="title">24.
-							</td>
-							<td>
-								<center>
-									<a id=up_7999284 href="vote?for=7999284&amp;dir=up&amp;whence=%6e%65%77%73">
-										<div class="votearrow" title="upvote">
-										</div>
-									</a>
-									<span> id=down_7999284></span>
-								</center>
-							</td>
-							<td class="title">
-								<a href="http://www.naturalearthdata.com/">Natural Earth: A public domain map dataset</a>
-								<span class="comhead"> (naturalearthdata.com) </span>
-							</td>
-						</tr>
-						<tr>
-							<td colspan=2>
-							</td>
-							<td class="subtext">
-								<span> id=score_7999284>60 points</span> by 
-								<a href="user?id=falava">falava</a> 7 hours ago  | 
-								<a href="item?id=7999284">5 comments</a>
-							</td>
-						</tr>
-						<tr style="height:5px">
-						</tr>
-						<tr>
-							<td align=right valign=top class="title">25.
-							</td>
-							<td>
-								<center>
-									<a id=up_7999100 href="vote?for=7999100&amp;dir=up&amp;whence=%6e%65%77%73">
-										<div class="votearrow" title="upvote">
-										</div>
-									</a>
-									<span> id=down_7999100>
-									</span>
-								</center>
-							</td>
-							<td class="title">
-								<a href="http://www.noip.com/blog/2014/07/03/update-microsoft-takedown/">Update to Microsoft Takedown – Domains Fully Restored</a>
-								<span class="comhead"> (noip.com) 
-								</span>
-							</td>
-						</tr>
-						<tr>
-							<td colspan=2></td>
-							<td class="subtext">
-								<span id=score_7999100>79 points</span> by <a href="user?id=thefreeman">thefreeman</a> 8 hours ago  | <a href="item?id=7999100">32 comments</a>
-							</td>
-						</tr>
-						<tr style="height:5px">
-						</tr>
-						<tr>
-							<td align=right valign=top class="title">26.
-							</td>
-							<td>
-								<center>
-									<a id=up_8000496 href="vote?for=8000496&amp;dir=up&amp;whence=%6e%65%77%73">
-										<div class="votearrow" title="upvote">
-										</div>
-									</a>
-									<span> id=down_8000496></span>
-								</center>
-							</td>
-							<td class="title">
-								<a href="http://www.rakkar.org/gamejob.html">Game Job: Getting a job in the game industry simulator</a>
-								<span class="comhead"> (rakkar.org) </span>
-							</td>
-						</tr>
-						<tr>
-							<td colspan=2>
-							</td>
-							<td class="subtext">
-								<span> id=score_8000496>25 points</span> by 
-								<a href="user?id=luu">luu</a> 4 hours ago  | 
-								<a href="item?id=8000496">24 comments</a>
-							</td>
-						</tr>
-						<tr style="height:5px">
-						</tr>
-						<tr>
-							<td align=right valign=top class="title">27.
-							</td>
-							<td>
-								<center>
-									<a id=up_7996464 href="vote?for=7996464&amp;dir=up&amp;whence=%6e%65%77%73">
-										<div class="votearrow" title="upvote">
-										</div>
-									</a>
-									<span> id=down_7996464></span>
-								</center>
-							</td>
-							<td class="title">
-								<a href="http://jsonresume.org/">JSON Resume – a JSON-based open source standard for resumes</a>
-								<span class="comhead"> (jsonresume.org) </span>
-							</td>
-						</tr>
-						<tr>
-							<td colspan=2></td>
-							<td class="subtext">
-								<span> id=score_7996464>323 points</span> by 
-								<a href="user?id=krrishd">krrishd</a> 22 hours ago  | 
-								<a href="item?id=7996464">186 comments</a>
-							</td>
-						</tr>
-						<tr style="height:5px">
-						</tr>
-						<tr>
-							<td align=right valign=top class="title">28.
-							</td>
-							<td>
-								<center>
-									<a id=up_7999364 href="vote?for=7999364&amp;dir=up&amp;whence=%6e%65%77%73">
-										<div class="votearrow" title="upvote">
-										</div>
-									</a>
-									<span> id=down_7999364></span>
-								</center>
-							</td>
-							<td class="title">
-								<a href="https://www.twilert.com">Show HN: Twilert – Emails in real time when your brand is mentioned on Twitter</a>
-								<span class="comhead"> (twilert.com) </span>
-							</td>
-						</tr>
-						<tr>
-							<td colspan=2>
-							</td>
-							<td class="subtext">
-								<span> id=score_7999364>39 points
-								</span> by <a href="user?id=joshmcmillan">joshmcmillan</a> 7 hours ago  | 
-								<a href="item?id=7999364">17 comments</a>
-							</td>
-						</tr>
-						<tr style="height:5px">
-						</tr>
-						<tr>
-							<td align=right valign=top class="title">29.
-							</td>
-							<td>
-								<center>
-									<a id=up_8000368 href="vote?for=8000368&amp;dir=up&amp;whence=%6e%65%77%73">
-										<div class="votearrow" title="upvote">
-										</div>
-									</a>
-									<span> id=down_8000368>
-									</span>
-								</center>
-							</td>
-							<td class="title">
-								<a href="http://maori.geek.nz/post/vagrant_with_docker_how_to_set_up_postgres_elasticsearch_and_redis_on_mac_os_x">Vagrant with Docker: How to set up Postgres, Elasticsearch and Redis on Mac OS X</a>
-								<span class="comhead"> (maori.geek.nz) </span>
-							</td>
-						</tr>
-						<tr>
-							<td colspan=2>
-							</td>
-							<td class="subtext">
-								<span> id=score_8000368>52 points
-								</span> by <a href="user?id=grahar64">grahar64</a> 4 hours ago  | 
-								<a href="item?id=8000368">17 comments</a>
-							</td>
-						</tr>
-						<tr style="height:5px">
-						</tr>
-						<tr>
-							<td align=right valign=top class="title">30.
-							</td>
-							<td>
-								<center>
-									<a id=up_7998604 href="vote?for=7998604&amp;dir=up&amp;whence=%6e%65%77%73">
-										<div class="votearrow" title="upvote">
-										</div>
-									</a>
-									<span> id=down_7998604></span>
-								</center>
-							</td>
-							<td class="title">
-								<a href="http://www.antipope.org/charlie/blog-static/2014/07/some-rambling-thoughts-on-regi.html">Some rambling thoughts on region restrictions</a>
-								<span class="comhead"> (antipope.org) </span>
-							</td>
-						</tr>
-						<tr>
-							<td colspan=2></td>
-							<td class="subtext">
-								<span> id=score_7998604>52 points
-								</span> by <a href="user?id=cstross">cstross</a> 10 hours ago  | 
-								<a href="item?id=7998604">11 comments</a>
-							</td>
-						</tr>
-						<tr style="height:5px">
-						</tr>
-						<tr style="height:10px">
-						</tr>
-						<tr>
-							<td colspan=2>
-							</td>
-							<td class="title">
-								<a href="news2">More</a>
-							</td>
-						</tr>
-					</table>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<img src="s.gif" height=10 width=0>
-					<table width="100%" cellspacing=0 cellpadding=1>
-						<tr>
-							<td bgcolor=#ff6600>
-							</td>
-						</tr>
-					</table>
-					<br>
-					<center>
-						<span class="yclinks">
-							<a href="newsguidelines.html">Guidelines</a> | 
-							<a href="newsfaq.html">FAQ</a> | 
-							<a href="lists">Lists</a> | 
-							<a href="rss">RSS</a> | 
-							<a href="bookmarklet.html">Bookmarklet</a> | 
-							<a href="dmca.html">DMCA</a> | 
-							<a href="newsnews.html">News News</a> | 
-							<a href="https://github.com/HackerNews/HN/issues">Bugs and Feature Requests</a> | 
-							<a href="http://www.ycombinator.com/">Y Combinator</a> | 
-							<a href="http://www.ycombinator.com/apply/">Apply</a> | 
-							<a href="http://www.ycombinator.com/resources/">Library</a> | 
-							<a href="http://www.ycombinator.com/contact/">Contact</a>
-						</span>
-						<br><br>
-						<form method=get action="//hn.algolia.com/">Search: 
-							<input type=text name="q" value="" size=17>
-						</form><br>
-					</center>
-				</td>
-			</tr>
-		</table>
-	</center>
+  <center>
+    <table border=0 cellpadding=0 cellspacing=0 width="85%" bgcolor=#f6f6ef>
+      <tr>
+        <td bgcolor=#ff6600>
+          <table border=0 cellpadding=0 cellspacing=0 width="100%" style="padding:2px">
+            <tr>
+              <td style="width:18px;padding-right:4px">
+                <a href="http://www.ycombinator.com">
+                  <img src="y18.gif" width=18 height=18 style="border:1px #ffffff solid;"></img>
+              </a>
+            </td>
+            <td style="line-height:12pt; height:10px;">
+              <span class="pagetop"> <b><a href="news">Hacker News</a></b> 
+                <img src="s.gif" height=1 width=10>
+                <a href="newest">new</a>
+                |
+                <a href="newcomments">comments</a>
+                |
+                <a href="show">show</a>
+                |
+                <a href="ask">ask</a>
+                |
+                <a href="jobs">jobs</a>
+                |
+                <a href="submit">submit</a>
+              </span>
+            </td>
+            <td style="text-align:right;padding-right:4px;">
+              <span class="pagetop">
+                <a href="newslogin?whence=%6e%65%77%73">login</a>
+              </span>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr style="height:10px"></tr>
+    <tr>
+      <td>
+        <table border=0 cellpadding=0 cellspacing=0>
+          <tr>
+            <td align=right valign=top class="title">1.</td>
+            <td>
+              <center>
+                <a id=up_8002980 href="vote?for=8002980&amp;dir=up&amp;whence=%6e%65%77%73">
+                  <div class="votearrow" title="upvote"></div>
+                </a>
+                <span id=down_8002980></span>
+              </center>
+            </td>
+            <td class="title">
+              <a href="http://www.bay12games.com/dwarves/index.html">Dwarf Fortress Gets Updated After 2 Years of Development</a>
+              <span class="comhead">(bay12games.com)</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan=2></td>
+            <td class="subtext">
+              <span id=score_8002980>55 points</span>
+              by
+              <a href="user?id=Audiophilip">Audiophilip</a>
+              44 minutes ago  |
+              <a href="item?id=8002980">3 comments</a>
+            </td>
+          </tr>
+          <tr style="height:5px"></tr>
+          <tr>
+            <td align=right valign=top class="title">2.</td>
+            <td>
+              <center>
+                <a id=up_8001337 href="vote?for=8001337&amp;dir=up&amp;whence=%6e%65%77%73">
+                  <div class="votearrow" title="upvote"></div>
+                </a>
+                <span id=down_8001337></span>
+              </center>
+            </td>
+            <td class="title">
+              <a href="http://cacm.acm.org/blogs/blog-cacm/176450-python-is-now-the-most-popular-introductory-teaching-language-at-top-us-universities/fulltext">
+                Python is now the most popular introductory language at top U.S. universities
+              </a>
+              <span class="comhead">(acm.org)</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan=2></td>
+            <td class="subtext">
+              <span id=score_8001337>294 points</span>
+              by
+              <a href="user?id=pbui">pbui</a>
+              8 hours ago  |
+              <a href="item?id=8001337">216 comments</a>
+            </td>
+          </tr>
+          <tr style="height:5px"></tr>
+          <tr>
+            <td align=right valign=top class="title">3.</td>
+            <td>
+              <center>
+                <a id=up_8002862 href="vote?for=8002862&amp;dir=up&amp;whence=%6e%65%77%73">
+                  <div class="votearrow" title="upvote"></div>
+                </a>
+                <span id=down_8002862></span>
+              </center>
+            </td>
+            <td class="title">
+              <a href="http://interactive.guim.co.uk/embed/2014/apr/image-opacity-slider-master/index.html?ww2-dday">
+                Interactive comparison of WWII photos from June 1944 to the same spot in 2014
+              </a>
+              <span class="comhead">(guim.co.uk)</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan=2></td>
+            <td class="subtext">
+              <span id=score_8002862>26 points</span>
+              by
+              <a href="user?id=kapkapkap">kapkapkap</a>
+              1 hour ago  |
+              <a href="item?id=8002862">2 comments</a>
+            </td>
+          </tr>
+          <tr style="height:5px"></tr>
+          <tr>
+            <td align=right valign=top class="title">4.</td>
+            <td>
+              <center>
+                <a id=up_8002604 href="vote?for=8002604&amp;dir=up&amp;whence=%6e%65%77%73">
+                  <div class="votearrow" title="upvote"></div>
+                </a>
+                <span id=down_8002604></span>
+              </center>
+            </td>
+            <td class="title">
+              <a href="https://github.com/ipkn/crow">
+                Crow is C++ Microframework for Web (inspired by Python Flask)
+              </a>
+              <span class="comhead">(github.com)</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan=2></td>
+            <td class="subtext">
+              <span id=score_8002604>46 points</span>
+              by
+              <a href="user?id=jeremyjh">jeremyjh</a>
+              3 hours ago  |
+              <a href="item?id=8002604">14 comments</a>
+            </td>
+          </tr>
+          <tr style="height:5px"></tr>
+          <tr>
+            <td align=right valign=top class="title">5.</td>
+            <td>
+              <center>
+                <a id=up_8002602 href="vote?for=8002602&amp;dir=up&amp;whence=%6e%65%77%73">
+                  <div class="votearrow" title="upvote"></div>
+                </a>
+                <span id=down_8002602></span>
+              </center>
+            </td>
+            <td class="title">
+              <a href="http://www.insidehighered.com/news/2011/01/18/study_finds_large_numbers_of_college_students_don_t_learn_much#sthash.xiIXcfgd.dpbs">Academically Adrift: Limited Learning on College Campuses</a>
+              <span class="comhead">(insidehighered.com)</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan=2></td>
+            <td class="subtext">
+              <span id=score_8002602>31 points</span>
+              by
+              <a href="user?id=luu">luu</a>
+              3 hours ago  |
+              <a href="item?id=8002602">13 comments</a>
+            </td>
+          </tr>
+          <tr style="height:5px"></tr>
+          <tr>
+            <td align=right valign=top class="title">6.</td>
+            <td></td>
+            <td class="title">
+              <a href="https://drchrono.com/jobs" rel="nofollow">Django Engineers // Join us and change healthcare</a>
+              <span class="comhead">(drchrono.com)</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan=2></td>
+            <td class="subtext">3 minutes ago</td>
+          </tr>
+          <tr style="height:5px"></tr>
+          <tr>
+            <td align=right valign=top class="title">7.</td>
+            <td>
+              <center>
+                <a id=up_8001464 href="vote?for=8001464&amp;dir=up&amp;whence=%6e%65%77%73">
+                  <div class="votearrow" title="upvote"></div>
+                </a>
+                <span id=down_8001464></span>
+              </center>
+            </td>
+            <td class="title">
+              <a href="https://medium.com/@shazow/urllib3-stripe-and-open-source-grants-edb9c0e46e82">Urllib3, Stripe, and Open Source Grants</a>
+              <span class="comhead">(medium.com)</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan=2></td>
+            <td class="subtext">
+              <span id=score_8001464>107 points</span>
+              by
+              <a href="user?id=malditojavi">malditojavi</a>
+              7 hours ago  |
+              <a href="item?id=8001464">15 comments</a>
+            </td>
+          </tr>
+          <tr style="height:5px"></tr>
+          <tr>
+            <td align=right valign=top class="title">8.</td>
+            <td>
+              <center>
+                <a id=up_8002194 href="vote?for=8002194&amp;dir=up&amp;whence=%6e%65%77%73">
+                  <div class="votearrow" title="upvote"></div>
+                </a>
+                <span id=down_8002194></span>
+              </center>
+            </td>
+            <td class="title">
+              <a href="https://insights.ubuntu.com/2014/07/07/ubuntu-and-open-source-help-the-city-of-munich-save-millions/">Ubuntu and open source help the City of Munich save millions</a>
+              <span class="comhead">(ubuntu.com)</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan=2></td>
+            <td class="subtext">
+              <span id=score_8002194>55 points</span>
+              by
+              <a href="user?id=arunc">arunc</a>
+              5 hours ago  |
+              <a href="item?id=8002194">14 comments</a>
+            </td>
+          </tr>
+          <tr style="height:5px"></tr>
+          <tr>
+            <td align=right valign=top class="title">9.</td>
+            <td>
+              <center>
+                <a id=up_8000966 href="vote?for=8000966&amp;dir=up&amp;whence=%6e%65%77%73">
+                  <div class="votearrow" title="upvote"></div>
+                </a>
+                <span id=down_8000966></span>
+              </center>
+            </td>
+            <td class="title">
+              <a href="https://bitcoinfoundation.org/2014/07/07/floating-fees">
+                Bitcoin Core switching from hard-coded to flexible fees in next major release
+              </a>
+              <span class="comhead">(bitcoinfoundation.org)</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan=2></td>
+            <td class="subtext">
+              <span id=score_8000966>127 points</span>
+              by
+              <a href="user?id=FatalLogic">FatalLogic</a>
+              9 hours ago  |
+              <a href="item?id=8000966">38 comments</a>
+            </td>
+          </tr>
+          <tr style="height:5px"></tr>
+          <tr>
+            <td align=right valign=top class="title">10.</td>
+            <td>
+              <center>
+                <a id=up_8000545 href="vote?for=8000545&amp;dir=up&amp;whence=%6e%65%77%73">
+                  <div class="votearrow" title="upvote"></div>
+                </a>
+                <span id=down_8000545></span>
+              </center>
+            </td>
+            <td class="title">
+              <a href="http://lists.centos.org/pipermail/centos-announce/2014-July/020393.html">CentOS 7 released on x86_64</a>
+              <span class="comhead">(centos.org)</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan=2></td>
+            <td class="subtext">
+              <span id=score_8000545>140 points</span>
+              by
+              <a href="user?id=priteau">priteau</a>
+              10 hours ago  |
+              <a href="item?id=8000545">77 comments</a>
+            </td>
+          </tr>
+          <tr style="height:5px"></tr>
+          <tr>
+            <td align=right valign=top class="title">11.</td>
+            <td>
+              <center>
+                <a id=up_7999814 href="vote?for=7999814&amp;dir=up&amp;whence=%6e%65%77%73">
+                  <div class="votearrow" title="upvote"></div>
+                </a>
+                <span id=down_7999814></span>
+              </center>
+            </td>
+            <td class="title">
+              <a href="http://techcrunch.com/2014/07/07/mit-and-dropbox-alums-launch-inbox-a-next-generation-email-platform/?utm_campaign=fb&amp;ncid=fb">
+                MIT And Dropbox Alums Launch Inbox, a Next-Generation Email Platform
+              </a>
+              <span class="comhead">(techcrunch.com)</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan=2></td>
+            <td class="subtext">
+              <span id=score_7999814>248 points</span>
+              by
+              <a href="user?id=ThomPete">ThomPete</a>
+              12 hours ago  |
+              <a href="item?id=7999814">212 comments</a>
+            </td>
+          </tr>
+          <tr style="height:5px"></tr>
+          <tr>
+            <td align=right valign=top class="title">12.</td>
+            <td>
+              <center>
+                <a id=up_8002188 href="vote?for=8002188&amp;dir=up&amp;whence=%6e%65%77%73">
+                  <div class="votearrow" title="upvote"></div>
+                </a>
+                <span id=down_8002188></span>
+              </center>
+            </td>
+            <td class="title">
+              <a href="http://queue.acm.org/detail.cfm?id=2038036">OCaml for the Masses (2011)</a>
+              <span class="comhead">(acm.org)</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan=2></td>
+            <td class="subtext">
+              <span id=score_8002188>45 points</span>
+              by
+              <a href="user?id=luu">luu</a>
+              5 hours ago  |
+              <a href="item?id=8002188">27 comments</a>
+            </td>
+          </tr>
+          <tr style="height:5px"></tr>
+          <tr>
+            <td align=right valign=top class="title">13.</td>
+            <td>
+              <center>
+                <a id=up_8000528 href="vote?for=8000528&amp;dir=up&amp;whence=%6e%65%77%73">
+                  <div class="votearrow" title="upvote"></div>
+                </a>
+                <span id=down_8000528></span>
+              </center>
+            </td>
+            <td class="title">
+              <a href="https://sheetlabs.com">Show HN: Sheetlabs – Turn your spreadsheets into APIs</a>
+              <span class="comhead">(sheetlabs.com)</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan=2></td>
+            <td class="subtext">
+              <span id=score_8000528>105 points</span>
+              by
+              <a href="user?id=samcrawford">samcrawford</a>
+              10 hours ago  |
+              <a href="item?id=8000528">54 comments</a>
+            </td>
+          </tr>
+          <tr style="height:5px"></tr>
+          <tr>
+            <td align=right valign=top class="title">14.</td>
+            <td>
+              <center>
+                <a id=up_8001689 href="vote?for=8001689&amp;dir=up&amp;whence=%6e%65%77%73">
+                  <div class="votearrow" title="upvote"></div>
+                </a>
+                <span id=down_8001689></span>
+              </center>
+            </td>
+            <td class="title">
+              <a href="http://online.wsj.com/articles/in-japan-idled-electronics-factories-find-new-life-in-farming-1404700202">
+                In Japan, Idled Electronics Factories Find New Life in Farming
+              </a>
+              <span class="comhead">(wsj.com)</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan=2></td>
+            <td class="subtext">
+              <span id=score_8001689>53 points</span>
+              by
+              <a href="user?id=T-A">T-A</a>
+              7 hours ago  |
+              <a href="item?id=8001689">21 comments</a>
+            </td>
+          </tr>
+          <tr style="height:5px"></tr>
+          <tr>
+            <td align=right valign=top class="title">15.</td>
+            <td>
+              <center>
+                <a id=up_8001400 href="vote?for=8001400&amp;dir=up&amp;whence=%6e%65%77%73">
+                  <div class="votearrow" title="upvote"></div>
+                </a>
+                <span id=down_8001400></span>
+              </center>
+            </td>
+            <td class="title">
+              <a href="http://www.guernicamag.com/daily/anya-groner-the-heart-you-save-wont-be-your-own/">Anya Groner: The Heart You Save Won’t Be Your Own</a>
+              <span class="comhead">(guernicamag.com)</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan=2></td>
+            <td class="subtext">
+              <span id=score_8001400>55 points</span>
+              by
+              <a href="user?id=Mz">Mz</a>
+              7 hours ago  |
+              <a href="item?id=8001400">21 comments</a>
+            </td>
+          </tr>
+          <tr style="height:5px"></tr>
+          <tr>
+            <td align=right valign=top class="title">16.</td>
+            <td>
+              <center>
+                <a id=up_7999269 href="vote?for=7999269&amp;dir=up&amp;whence=%6e%65%77%73">
+                  <div class="votearrow" title="upvote"></div>
+                </a>
+                <span id=down_7999269></span>
+              </center>
+            </td>
+            <td class="title">
+              <a href="http://lmjabreu.com/post/ios-8-privacy-updates/">iOS 8 Privacy Updates</a>
+              <span class="comhead">(lmjabreu.com)</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan=2></td>
+            <td class="subtext">
+              <span id=score_7999269>156 points</span>
+              by
+              <a href="user?id=kyledreger">kyledreger</a>
+              13 hours ago  |
+              <a href="item?id=7999269">54 comments</a>
+            </td>
+          </tr>
+          <tr style="height:5px"></tr>
+          <tr>
+            <td align=right valign=top class="title">17.</td>
+            <td>
+              <center>
+                <a id=up_8002494 href="vote?for=8002494&amp;dir=up&amp;whence=%6e%65%77%73">
+                  <div class="votearrow" title="upvote"></div>
+                </a>
+                <span id=down_8002494></span>
+              </center>
+            </td>
+            <td class="title">
+              <a href="http://online.wsj.com/articles/for-taylor-swift-the-future-of-music-is-a-love-story-1404763219">For Taylor Swift, the Future of Music Is a Love Story</a>
+              <span class="comhead">(wsj.com)</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan=2></td>
+            <td class="subtext">
+              <span id=score_8002494>18 points</span>
+              by
+              <a href="user?id=prostoalex">prostoalex</a>
+              4 hours ago  |
+              <a href="item?id=8002494">13 comments</a>
+            </td>
+          </tr>
+          <tr style="height:5px"></tr>
+          <tr>
+            <td align=right valign=top class="title">18.</td>
+            <td>
+              <center>
+                <a id=up_8002968 href="vote?for=8002968&amp;dir=up&amp;whence=%6e%65%77%73">
+                  <div class="votearrow" title="upvote"></div>
+                </a>
+                <span id=down_8002968></span>
+              </center>
+            </td>
+            <td class="title">
+              <a href="http://www.bay12forums.com/smf/index.php?topic=140013" rel="nofollow">Dwarf Fortress 0.40.01 Released (first update in 2 years)</a>
+              <span class="comhead">(bay12forums.com)</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan=2></td>
+            <td class="subtext">
+              <span id=score_8002968>4 points</span>
+              by
+              <a href="user?id=danso">danso</a>
+              52 minutes ago  |
+              <a href="item?id=8002968">1 comment</a>
+            </td>
+          </tr>
+          <tr style="height:5px"></tr>
+          <tr>
+            <td align=right valign=top class="title">19.</td>
+            <td>
+              <center>
+                <a id=up_7999392 href="vote?for=7999392&amp;dir=up&amp;whence=%6e%65%77%73">
+                  <div class="votearrow" title="upvote"></div>
+                </a>
+                <span id=down_7999392></span>
+              </center>
+            </td>
+            <td class="title">
+              <a href="http://nothings.org/gamedev/herringbone/">Herringbone Wang Tiles</a>
+              <span class="comhead">(nothings.org)</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan=2></td>
+            <td class="subtext">
+              <span id=score_7999392>121 points</span>
+              by
+              <a href="user?id=speednoise">speednoise</a>
+              13 hours ago  |
+              <a href="item?id=7999392">10 comments</a>
+            </td>
+          </tr>
+          <tr style="height:5px"></tr>
+          <tr>
+            <td align=right valign=top class="title">20.</td>
+            <td>
+              <center>
+                <a id=up_7998392 href="vote?for=7998392&amp;dir=up&amp;whence=%6e%65%77%73">
+                  <div class="votearrow" title="upvote"></div>
+                </a>
+                <span id=down_7998392></span>
+              </center>
+            </td>
+            <td class="title">
+              <a href="http://superpixelquest.com/">Super Pixel Quest</a>
+              <span class="comhead">(superpixelquest.com)</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan=2></td>
+            <td class="subtext">
+              <span id=score_7998392>180 points</span>
+              by
+              <a href="user?id=EmilandDC">EmilandDC</a>
+              16 hours ago  |
+              <a href="item?id=7998392">36 comments</a>
+            </td>
+          </tr>
+          <tr style="height:5px"></tr>
+          <tr>
+            <td align=right valign=top class="title">21.</td>
+            <td>
+              <center>
+                <a id=up_8001224 href="vote?for=8001224&amp;dir=up&amp;whence=%6e%65%77%73">
+                  <div class="votearrow" title="upvote"></div>
+                </a>
+                <span id=down_8001224></span>
+              </center>
+            </td>
+            <td class="title">
+              <a href="http://techcrunch.com/2014/07/04/the-government-once-built-silicon-valley/?utm_campaign=fb&amp;ncid=fb">The Government Once Built Silicon Valley</a>
+              <span class="comhead">(techcrunch.com)</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan=2></td>
+            <td class="subtext">
+              <span id=score_8001224>46 points</span>
+              by
+              <a href="user?id=sgy">sgy</a>
+              8 hours ago  |
+              <a href="item?id=8001224">30 comments</a>
+            </td>
+          </tr>
+          <tr style="height:5px"></tr>
+          <tr>
+            <td align=right valign=top class="title">22.</td>
+            <td>
+              <center>
+                <a id=up_7998048 href="vote?for=7998048&amp;dir=up&amp;whence=%6e%65%77%73">
+                  <div class="votearrow" title="upvote"></div>
+                </a>
+                <span id=down_7998048></span>
+              </center>
+            </td>
+            <td class="title">
+              <a href="https://ssl.washingtonpost.com/securedrop">SecureDrop</a>
+              <span class="comhead">(washingtonpost.com)</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan=2></td>
+            <td class="subtext">
+              <span id=score_7998048>236 points</span>
+              by
+              <a href="user?id=brianmwaters_hn">brianmwaters_hn</a>
+              18 hours ago  |
+              <a href="item?id=7998048">84 comments</a>
+            </td>
+          </tr>
+          <tr style="height:5px"></tr>
+          <tr>
+            <td align=right valign=top class="title">23.</td>
+            <td>
+              <center>
+                <a id=up_7998609 href="vote?for=7998609&amp;dir=up&amp;whence=%6e%65%77%73">
+                  <div class="votearrow" title="upvote"></div>
+                </a>
+                <span id=down_7998609></span>
+              </center>
+            </td>
+            <td class="title">
+              <a href="http://www.fireflyspace.com">Firefly Space Systems</a>
+              <span class="comhead">(fireflyspace.com)</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan=2></td>
+            <td class="subtext">
+              <span id=score_7998609>141 points</span>
+              by
+              <a href="user?id=cryptoz">cryptoz</a>
+              15 hours ago  |
+              <a href="item?id=7998609">115 comments</a>
+            </td>
+          </tr>
+          <tr style="height:5px"></tr>
+          <tr>
+            <td align=right valign=top class="title">24.</td>
+            <td>
+              <center>
+                <a id=up_8000811 href="vote?for=8000811&amp;dir=up&amp;whence=%6e%65%77%73">
+                  <div class="votearrow" title="upvote"></div>
+                </a>
+                <span id=down_8000811></span>
+              </center>
+            </td>
+            <td class="title">
+              <a href="item?id=8000811">Ask HN: How best to learn software design principles?</a>
+            </td>
+          </tr>
+          <tr>
+            <td colspan=2></td>
+            <td class="subtext">
+              <span id=score_8000811>142 points</span>
+              by
+              <a href="user?id=chaimkut">chaimkut</a>
+              9 hours ago  |
+              <a href="item?id=8000811">61 comments</a>
+            </td>
+          </tr>
+          <tr style="height:5px"></tr>
+          <tr>
+            <td align=right valign=top class="title">25.</td>
+            <td>
+              <center>
+                <a id=up_8000475 href="vote?for=8000475&amp;dir=up&amp;whence=%6e%65%77%73">
+                  <div class="votearrow" title="upvote"></div>
+                </a>
+                <span id=down_8000475></span>
+              </center>
+            </td>
+            <td class="title">
+              <a href="http://www.nytimes.com/2014/07/08/upshot/welcome-to-the-everything-boom-or-maybe-the-everything-bubble.html?src=twr">
+                Welcome to the Everything Boom, or Maybe the Everything Bubble
+              </a>
+              <span class="comhead">(nytimes.com)</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan=2></td>
+            <td class="subtext">
+              <span id=score_8000475>53 points</span>
+              by
+              <a href="user?id=happyscrappy">happyscrappy</a>
+              10 hours ago  |
+              <a href="item?id=8000475">33 comments</a>
+            </td>
+          </tr>
+          <tr style="height:5px"></tr>
+          <tr>
+            <td align=right valign=top class="title">26.</td>
+            <td>
+              <center>
+                <a id=up_7998657 href="vote?for=7998657&amp;dir=up&amp;whence=%6e%65%77%73">
+                  <div class="votearrow" title="upvote"></div>
+                </a>
+                <span id=down_7998657></span>
+              </center>
+            </td>
+            <td class="title">
+              <a href="http://robertheaton.com/2014/06/20/code-review-without-your-eyes/">Code review without your glasses</a>
+              <span class="comhead">(robertheaton.com)</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan=2></td>
+            <td class="subtext">
+              <span id=score_7998657>111 points</span>
+              by
+              <a href="user?id=padolsey">padolsey</a>
+              15 hours ago  |
+              <a href="item?id=7998657">34 comments</a>
+            </td>
+          </tr>
+          <tr style="height:5px"></tr>
+          <tr>
+            <td align=right valign=top class="title">27.</td>
+            <td>
+              <center>
+                <a id=up_8002215 href="vote?for=8002215&amp;dir=up&amp;whence=%6e%65%77%73">
+                  <div class="votearrow" title="upvote"></div>
+                </a>
+                <span id=down_8002215></span>
+              </center>
+            </td>
+            <td class="title">
+              <a href="http://online.wsj.com/articles/mark-zuckerberg-on-a-future-where-the-internet-is-available-to-all-1404762276?mod=_newsreel_3">
+                Mark Zuckerberg on a Future Where the Internet Is Available to All
+              </a>
+              <span class="comhead">(wsj.com)</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan=2></td>
+            <td class="subtext">
+              <span id=score_8002215>17 points</span>
+              by
+              <a href="user?id=robg">robg</a>
+              5 hours ago  |
+              <a href="item?id=8002215">6 comments</a>
+            </td>
+          </tr>
+          <tr style="height:5px"></tr>
+          <tr>
+            <td align=right valign=top class="title">28.</td>
+            <td>
+              <center>
+                <a id=up_7996464 href="vote?for=7996464&amp;dir=up&amp;whence=%6e%65%77%73">
+                  <div class="votearrow" title="upvote"></div>
+                </a>
+                <span id=down_7996464></span>
+              </center>
+            </td>
+            <td class="title">
+              <a href="http://jsonresume.org/">JSON Resume – a JSON-based open source standard for resumes</a>
+              <span class="comhead">(jsonresume.org)</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan=2></td>
+            <td class="subtext">
+              <span id=score_7996464>347 points</span>
+              by
+              <a href="user?id=krrishd">krrishd</a>
+              1 day ago  |
+              <a href="item?id=7996464">191 comments</a>
+            </td>
+          </tr>
+          <tr style="height:5px"></tr>
+          <tr>
+            <td align=right valign=top class="title">29.</td>
+            <td>
+              <center>
+                <a id=up_8001245 href="vote?for=8001245&amp;dir=up&amp;whence=%6e%65%77%73">
+                  <div class="votearrow" title="upvote"></div>
+                </a>
+                <span id=down_8001245></span>
+              </center>
+            </td>
+            <td class="title">
+              <a href="https://github.com/practicalswift/Pythonic.swift">
+                Show HN: A Swift implementation of selected parts of Python standard library
+              </a>
+              <span class="comhead">(github.com)</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan=2></td>
+            <td class="subtext">
+              <span id=score_8001245>32 points</span>
+              by
+              <a href="user?id=practicalswift">practicalswift</a>
+              8 hours ago  |
+              <a href="item?id=8001245">6 comments</a>
+            </td>
+          </tr>
+          <tr style="height:5px"></tr>
+          <tr>
+            <td align=right valign=top class="title">30.</td>
+            <td>
+              <center>
+                <a id=up_7999284 href="vote?for=7999284&amp;dir=up&amp;whence=%6e%65%77%73">
+                  <div class="votearrow" title="upvote"></div>
+                </a>
+                <span id=down_7999284></span>
+              </center>
+            </td>
+            <td class="title">
+              <a href="http://www.naturalearthdata.com/">Natural Earth: A public domain map dataset</a>
+              <span class="comhead">(naturalearthdata.com)</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan=2></td>
+            <td class="subtext">
+              <span id=score_7999284>76 points</span>
+              by
+              <a href="user?id=falava">falava</a>
+              13 hours ago  |
+              <a href="item?id=7999284">5 comments</a>
+            </td>
+          </tr>
+          <tr style="height:5px"></tr>
+          <tr style="height:10px"></tr>
+          <tr>
+            <td colspan=2></td>
+            <td class="title">
+              <a href="news2">More</a>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="s.gif" height=10 width=0>
+        <table width="100%" cellspacing=0 cellpadding=1>
+          <tr>
+            <td bgcolor=#ff6600></td>
+          </tr>
+        </table>
+        <br>
+        <center>
+          <span class="yclinks">
+            <a href="newsguidelines.html">Guidelines</a>
+            |
+            <a href="newsfaq.html">FAQ</a>
+            |
+            <a href="lists">Lists</a>
+            |
+            <a href="rss">RSS</a>
+            |
+            <a href="bookmarklet.html">Bookmarklet</a>
+            |
+            <a href="dmca.html">DMCA</a>
+            |
+            <a href="newsnews.html">News News</a>
+            |
+            <a href="https://github.com/HackerNews/HN/issues">Bugs and Feature Requests</a>
+            |
+            <a href="http://www.ycombinator.com/">Y Combinator</a>
+            |
+            <a href="http://www.ycombinator.com/apply/">Apply</a>
+            |
+            <a href="http://www.ycombinator.com/resources/">Library</a>
+            |
+            <a href="http://www.ycombinator.com/contact/">Contact</a>
+          </span>
+          <br>
+          <br>
+          <form method=get action="//hn.algolia.com/">
+            Search:
+            <input type=text name="q" value="" size=17></form>
+          <br></center>
+      </td>
+    </tr>
+  </table>
+</center>
 </body>
 </html>
