@@ -71,11 +71,12 @@
 
 # 3. Refactored Solution (Comment the other code to run this)
 
-def valid_triangle?(*triangle)
-  return false if triangle.sort!.length != 3
-  triangle.each { |side| return false if (side <=> 0) <= 0 }
-  return false if (triangle[0] + triangle[1]) <= triangle[2]
-  return true
+def valid_triangle?(a,b,c)
+	triangle = [a,b,c]
+	return false if triangle.sort!.length != 3
+	triangle.each { |side| return false if (side <=> 0) <= 0 }
+	return false if (triangle[0] + triangle[1]) <= triangle[2]
+	return true
 end
 
 
