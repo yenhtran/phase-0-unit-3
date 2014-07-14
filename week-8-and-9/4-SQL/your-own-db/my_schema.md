@@ -1,0 +1,1 @@
+See 'my_schema.png' file.
